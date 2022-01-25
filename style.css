@@ -1,0 +1,51 @@
+:root{
+    --gradient-start: hsl(13, 100%, 72%);
+    --gradient-end: hsl(353, 100%, 62%);
+
+    
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.menu{
+    display: none;
+}
+
+.header{
+    background: url('./images/bg-pattern-intro-mobile.svg'),
+                linear-gradient(180deg ,var(--gradient-start), var(--gradient-end));
+    background-position: 30% 50%;
+    height: 500px;
+    width: 100%;
+border-bottom-left-radius: 80px;
+
+}
+
+.header-body{
+    height: 100%;
+    text-align: center;
+}
+
+
+.header-body h1 > span{
+    display: block;
+}
