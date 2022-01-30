@@ -6,6 +6,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,70 +19,106 @@
 </head>
 <body>
 
-  <div class="menu container d-none flex-column justify-content-center">
-    <ul class=" d-flex justify-content-center flex-column align-items-center">
-      <li>Product</li>
-      <li>Company</li>
-      <li>Connect</li>
-      <div class="line"></div>
-      
-      <button>Login</button>
-      <button>Sign Up</button>
-    </ul>
-  
-
-  <!-- Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  
-
-  About
-  Team
-  Blog
-  Careers
-
-  
-
-  Contact
-  Newsletter
-  LinkedIn -->
-  
-  
-  </div>
-  <section class="header">
-    <div class="header-nav container d-flex justify-content-between align-items-center py-2">
-        <div class="logo"><p>Blogr</p></div>
-        <div class="menu-icon">
-          <img src="/images/icon-hamburger.svg" alt="" srcset="">
+  <main>
+    <section class="header">
+      <div class="header-nav container d-flex flex-column align-items-center py-3">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+          <div class="nav-left d-flex align-items-center">
+            <img class="logo" src="./images/logo.svg" alt="Logo" srcset="">
+            <ul class="align-items-center">
+              <li><div class="d-flex align-items-center"><p>Product</p> <img src="./images/icon-arrow-light.svg" alt="arrow light" srcset=""></div>
+                <ul>
+                  <li>Pricing</li>
+                  <li>Marketplace</li>
+                  <li>Features</li>
+                  <li>Integrations</li>
+                </ul>
+              </li>
+              <li><div class="d-flex align-items-center"><p>Company</p> <img src="./images/icon-arrow-light.svg" alt="arrow light" srcset=""></div>
+                <ul>
+                  <li>Overview</li>
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+              </li>
+              <li><div class="d-flex align-items-center"><p>Connect</p> <img src="./images/icon-arrow-light.svg" alt="arrow light" srcset=""></div>
+                <ul>
+                  <li>Contact</li>
+                  <li>Newsletter</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-icon nav-right">
+            <img id='menu-button' src="/images/icon-hamburger.svg" alt="" srcset="">
+            <div>
+              <button class="btn-login">Login</button>
+              <button class="btn-pill">Sign Up</button>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="header-body d-flex flex-column justify-content-center align-items-center p-5">
-      <h1>A modern <span>publishing platform</span></h1>
-      <p>Grow your audience and build your online brand</p>
-
-      <div class="intro">
-        <button>Start for Free</button>
-        <button>Learn More</button>
+        <div class="ham-menu container flex-column justify-content-center">
+          <ul class=" d-flex flex-column align-items-center">
+            <li><div class="d-flex justify-content-center align-items-center">Product <img class="ham-arrow" src="./images/icon-arrow-dark.svg" alt="" srcset=""></div> 
+              <ul>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </li>
+            <li><div class="d-flex justify-content-center align-items-center">Company <img class="ham-arrow" src="./images/icon-arrow-dark.svg" alt="" srcset=""></div> 
+              <ul>
+                <li>Overview</li>
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </li>
+            <li><div class="heading d-flex justify-content-center align-items-center">Connect <img class="ham-arrow" src="./images/icon-arrow-dark.svg" alt="" srcset=""></div> 
+              <ul>
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </li>
+            <div class="line"></div>
+            
+            <button class="btn-login heading">Login</button>
+            <button class="btn-sign-up heading">Sign Up</button>
+          </ul>
+        
+      
+ 
+        
+        
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="design">
+      <div class="header-body d-flex justify-content-center flex-column align-items-center">
+        <h1>A modern <span>publishing platform</span></h1>
+        <p>Grow your audience and build your online brand</p>
 
-  </section>
-
+        <div class="intro">
+          <button class="btn-pill" >Start for Free</button>
+          <button class="btn-pill-outline">Learn More</button>
+        </div>
+      </div>
+    </section>
   
-  
-  <div class="title">
-    <h1>Designed for the future</h1>
+    <div class="title heading">
+    <p>Designed for the future</p>
   </div>
-  
-  <div class="grid container grid-setup">
-    <img src="./images/illustration-editor-mobile.svg" alt="" srcset="">
+  <div class="grid section-1 grid-setup">
+    <div>
+      <img class="editor" src="./images/illustration-editor-mobile.svg" alt="" srcset="">
+    </div>
+    
     <div class="description">
-      <p class="heading">Introducing an extensible editor</p>
+      <p class="heading">Introducing an <span>extensible editor</span></p>
       <p class="text">
         Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
   The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
@@ -89,7 +128,7 @@
     </div>
 
     <div class="description">
-      <p class="heading">Robust content management</p>
+      <p class="heading">Robust content <span>management</span></p>
       <p class="text">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
         by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
     </div>
@@ -97,10 +136,11 @@
 
   
 
-  <div class="infrastructure container">
-    <img src="./images/illustration-phones.svg" alt="" srcset="">
+  <div class="section-2 ">
+    <img class="phones" src="./images/illustration-phones.svg" alt="Phones" srcset="">
+    <!-- <img class="circles" src="./images/bg-pattern-circles.svg" alt="Circles" srcset=""> -->
     <div class="description">
-      <p class="heading">State of the Art Infrastructure</p>
+      <p class="heading">State of the Art <span>Infrastructure</span></p>
       <p class="text">
   With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
   This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
@@ -109,8 +149,11 @@
     </div>
   </div>
   
-  <div class="grid container grid-setup">
-    <img src="./images/illustration-laptop-mobile.svg" alt="" srcset="">
+  <div class="grid grid-setup section-3">
+    <div>
+      <img class="laptop" src="./images/illustration-laptop-mobile.svg" alt="" srcset="">
+    </div>
+    
     <div class="description">
       <p class="heading">Free, open, simple</p>
       <p class="text">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
@@ -129,7 +172,11 @@
   
 
   
-  <div class="footer">
+  <div class="footer fluid-container">
+    <div class="footer-img-container">
+      <img src="./images/logo.svg" alt="Logo">
+    </div>
+    
     <div class="column">
       <p>Product</p>  
 
@@ -160,5 +207,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  </main>
 </body>
+<script src="script.js"></script>
 </html>
